@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter File Log Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -19,7 +20,9 @@ class MyApp extends StatelessWidget {
       home: DefaultTabController(
         length: 4,
         child: Scaffold(
+        
           appBar: AppBar(
+            
             bottom: const TabBar(
               tabs: [
                 Tab(text: "1"),
